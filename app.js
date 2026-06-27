@@ -1,14 +1,14 @@
 const axios = require('axios');
-const randomstring = require('random-string');
-const { randomInt } = require('crypto');
+const randomstring = require('random-string'); 
+const { randomInt } = require('crypto'); 
 class SendSms {
   constructor(phone) {
     this.adet = 0;
     let rakam = [];
     let tcNo = "";
-    rakam.push(randomInt(1, 10));
+    rakam.push(randomInt(1, 10)); 
     for (let i = 1; i < 9; i++) {
-      rakam.push(randomInt(0, 10));
+      rakam.push(randomInt(0, 10)); 
     }
     rakam.push((((rakam[0] + rakam[2] + rakam[4] + rakam[6] + rakam[8]) * 7 - (rakam[1] + rakam[3] + rakam[5] + rakam[7])) % 10));
     rakam.push(((rakam[0] + rakam[1] + rakam[2] + rakam[3] + rakam[4] + rakam[5] + rakam[6] + rakam[7] + rakam[8] + rakam[9]) % 10));
