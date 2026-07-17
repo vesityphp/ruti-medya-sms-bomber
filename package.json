@@ -1,0 +1,10 @@
+{
+  "name": "ruti-medya-sms-bomber",
+  "version": "1.0.0",
+  "description": "Ruti Medya SMS Test Aracı",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.7.0",
+    "random-string": "^0.2.0"
+  }
+}
